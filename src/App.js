@@ -10,11 +10,9 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        {/* Use <Routes> and 'element' prop with React Router v6 */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
-          {/* Use :id for dynamic routing and pass it via useParams in MovieInfo */}
           <Route path="/movies/:id" element={<MovieInfo />} />
         </Routes>
         <Footer />

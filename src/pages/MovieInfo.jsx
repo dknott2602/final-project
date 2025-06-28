@@ -1,10 +1,42 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
 
 const MovieInfo = () => {
     const {id} = useParams()
-    const movie = movie.find(movie => +movie.id === +id)
+    const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`http://www.omdbapi.com/?apikey=8855abea&i=${id}`); // Replace with your API URL
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array ensures this runs only once on component mount
+
+  if (loading) {
+    return <div>Loading data...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+    console.log(id, "movie id")
+    const movie = data
+    console.log(movie, "Movie data")
 
   return (
     <div className="movies__body">
@@ -22,7 +54,7 @@ const MovieInfo = () => {
             <div className="movie__selected">
               <figure className="movie__selected--figure">
                 <img
-                  src={movie.imdbID}
+                  src={movie.Poster}
                   alt=""
                   className="movie__selcted--img"
                 />

@@ -117,7 +117,6 @@ const Movies = () => {
                   <option value="YEAR">Year</option>
                 </select>
               </div>
-              {/* Local Search Input and Button */}
               <div className="input__wrap">
                 <input
                   type="text"
@@ -134,7 +133,6 @@ const Movies = () => {
                   <FontAwesomeIcon icon="magnifying-glass" />
                 </div>
               </div>
-              {/* End Local Search Input */}
 
               {loading ? (
                 <div className="movies">Loading movies...</div>
