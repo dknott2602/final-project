@@ -31,9 +31,7 @@ nav {
     margin: 0 auto;
 }
 
-.container {
-    padding: 96px 0;
-}
+
 
 ul {
     display: flex;
@@ -214,15 +212,6 @@ nav {
     height: 40px;
 }
 
-h1 {
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: center;
-    letter-spacing: .1em;
-    font-size: 75px;
-    max-width: 1000px;
-    margin-bottom: 40px;
-}
 
 .content__wrapper {
     align-items: center;
@@ -280,7 +269,7 @@ input {
 }
 
 .container {
-    padding: 56px 0;
+    padding: 96px 0;
 }
 
 .row {
@@ -345,6 +334,7 @@ header {
 
   .header__img--logo {
     padding-bottom: 64px;
+    position: absolute;
   }
 
 /*
@@ -399,7 +389,7 @@ select {
 }
 
 .movies {
-    margin-top: 700px;
+    margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -441,6 +431,10 @@ select {
     margin-bottom: 8px;
 }
 
+.movies__container {
+  margin-bottom: 400px;
+}
+
 /*
 
 MovieInfo
@@ -471,8 +465,8 @@ MovieInfo
   }
   
   .movie__selected--figure {
-    width: 40%;
-    padding: 16px 32px;
+    width: 100%;
+    padding: 16px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -485,15 +479,23 @@ MovieInfo
   }
 
   .movie__selected--description {
-    width: 60%;
+    width: 40%;
     padding: 16px 32px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .movie__selected--year {
+    font-size: 24px;
+    font-weight: 700;
+    width: 40%;
+    padding: 16px 32px;
+  }
+
   .movie__summary {
     margin-bottom: 16px;
+    font-size: 24px;
   }
   
   .movie__selected--title {
@@ -515,8 +517,11 @@ FOOTER
 
 */
 
-footer {
+.footer__container {
     background-color: #070707;
+    position: relative;
+    margin-top: auto;
+    padding: 96px 0 ;
 }
 
 .footer__logo {

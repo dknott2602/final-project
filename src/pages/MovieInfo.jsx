@@ -67,13 +67,13 @@ const MovieInfo = () => {
               <div className="movie__selected--year">{movie.Year}</div>
               <div className="movie__summary">
                 <h3 className="movie__summary--title">Summary</h3>
-                <p className="movie__suumary--para">
+                <p className="movie__summary--para">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Laudantium illum autem porro, repellendus sunt voluptatem ut
                   est assumenda quibusdam, culpa consequuntur rem veritatis
                   maiores sequi dolorum iusto nesciunt debitis sed.
                 </p>
-                <p className="movie__suumary--para">
+                <p className="movie__summary--para">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Laudantium illum autem porro, repellendus sunt voluptatem ut
                   est assumenda quibusdam, culpa consequuntur rem veritatis
