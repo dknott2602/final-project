@@ -16,7 +16,7 @@ const Nav = () => {
     <nav>
       <div className="nav__container">
         <Link to="/">
-          <img src={IMBDImage} alt="" className="logo" />
+          <img className="logo" src={IMBDImage} alt=""  />
         </Link>
         <ul className="nav__links">
           <li className="nav__list">
@@ -39,16 +39,19 @@ const Nav = () => {
           </button>
         </ul>
         <div className="menu__backdrop">
-          <button className="btn__menu--close" onClick={closeMenu}>
+          <button className="btn__menu btn__menu--close" onClick={closeMenu}>
             <FontAwesomeIcon icon="times" />
           </button>
           <ul className="menu__links">
             <li className="menu__list">
-              <Link to="/" className="menu__link">
+              <Link to="/" className="menu__link" onClick={closeMenu}>
                 Home
               </Link>
-              <Link to="/" className="menu__link">
+              <Link to="/movies" className="menu__link" onClick={closeMenu}>
                 Find Your Movie
+              </Link>
+              <Link to="/" className="menu__link">
+                Contact
               </Link>
             </li>
           </ul>
