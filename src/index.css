@@ -458,6 +458,7 @@ select {
 .movies {
     margin-top: 200px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -755,16 +756,14 @@ FOOTER
     .movies {
       flex-wrap: wrap;
     }
+    
 
     .movie {
-      width: 100%;
+      /* width: 100%; */
+      flex-wrap: wrap;
     }
   
-    .highlight {
-      width: 100%;
-    }
+    
   
-    .highlight:not(:last-child) {
-      margin-bottom: 24px;
-    }
+    
   }
