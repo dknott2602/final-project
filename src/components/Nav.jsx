@@ -34,10 +34,10 @@ const Nav = () => {
               Contact
             </Link>
           </li>
+        </ul>
           <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon="bars" />
           </button>
-        </ul>
         <div className="menu__backdrop">
           <button className="btn__menu btn__menu--close" onClick={closeMenu}>
             <FontAwesomeIcon icon="times" />

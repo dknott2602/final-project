@@ -372,15 +372,7 @@ header {
     height: calc(100vh - 200px);
   }
 
-.header__container {
-    width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
+
 
 .btn {
     background-color: #7342d6;
@@ -391,15 +383,22 @@ header {
     border: none;
   }
 
-  .header__img {
+.header__img {
     padding-bottom: 48px;
     justify-content: space-around;
   }
 
-  .header__img--logo {
+.header__img--logo {
     padding-bottom: 64px;
     position: absolute;
   }
+
+.search__wrapper {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  padding-bottom: 8px;
+}
 
 /*
 

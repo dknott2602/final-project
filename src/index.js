@@ -4,6 +4,12 @@ import './index.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBars, faTimes, faSpinner, faArrowLeft, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'; // Import the specific icons you need
+
+// Add the imported icons to the Font Awesome library
+library.add(faBars, faTimes, faSpinner, faArrowLeft, faMagnifyingGlass);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

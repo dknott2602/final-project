@@ -38,7 +38,7 @@ const Landing = () => {
                     handleSearchSubmit();
                   }
                 }}
-              />
+                />
               <div className="search__wrapper" onClick={handleSearchSubmit}> {/* Add onClick to the search icon */}
                 <FontAwesomeIcon icon="magnifying-glass" />
               </div>
